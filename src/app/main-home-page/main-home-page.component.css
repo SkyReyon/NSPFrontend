@@ -1,0 +1,359 @@
+.navbar {
+    overflow: hidden;
+    background-color: red;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+   
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  
+  
+  
+  body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif, 
+          "Segoe UI Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff
+  }
+  
+  [tabindex="-1"]:focus {
+      outline: 0 !important
+  }
+  
+  hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: .5rem
+  }
+  
+  p {
+      margin-top: 0;
+      margin-bottom: 1rem
+  }
+  
+  abbr[data-original-title], abbr[title] {
+      text-decoration: underline;
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted;
+      cursor: help;
+      border-bottom: 0
+  }
+  
+  address {
+      margin-bottom: 1rem;
+      font-style: normal;
+      line-height: inherit
+  }
+  
+  sub, sup {
+      position: relative;
+      font-size: 75%;
+      line-height: 0;
+      vertical-align: baseline
+  }
+  
+  sub {
+      bottom: -.25em
+  }
+  
+  sup {
+      top: -.5em
+  }
+  
+  a {
+      color: #007bff;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  table {
+      border-collapse: collapse
+  }
+  
+  caption {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      color: #6c757d;
+      text-align: left;
+      caption-side: bottom
+  }
+  
+  th {
+      text-align: inherit
+  }
+  
+  label {
+      display: inline-block;
+      margin-bottom: .5rem
+  }
+  
+  button {
+      border-radius: 0
+  }
+  
+  button:focus {
+      outline: 1px dotted;
+      outline: 5px auto -webkit-focus-ring-color
+  }
+  
+  button, input, optgroup, select, textarea {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit
+  }
+  
+  button, input {
+      overflow: visible
+  }
+  
+  button, select {
+      text-transform: none
+  }
+  
+  
+  
+  input[type=date], input[type=datetime-local], input[type=month], input[type=time]
+      {
+      -webkit-appearance: listbox
+  }
+  
+  textarea {
+      overflow: auto;
+      resize: vertical
+  }
+  
+  fieldset {
+      min-width: 0;
+      padding: 0;
+      margin: 0;
+      border: 0
+  }
+  
+  legend {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: .5rem;
+      font-size: 1.5rem;
+      line-height: inherit;
+      color: inherit;
+      white-space: normal
+  }
+  
+  
+  
+  
+  .card {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, .125);
+      border-radius: .25rem
+  }
+  
+  
+  .card>.list-group:last-child .list-group-item:last-child {
+      border-bottom-right-radius: .25rem;
+      border-bottom-left-radius: .25rem
+  }
+  
+  .card-body {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1.25rem
+  }
+  
+  
+  
+  .card-footer {
+      padding: .75rem 1.25rem;
+      background-color: rgba(0, 0, 0, .03);
+      border-top: 1px solid rgba(0, 0, 0, .125)
+  }
+  
+  .card-footer:last-child {
+      border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px)
+  }
+  
+  .card-header-tabs {
+      margin-right: -.625rem;
+      margin-bottom: -.75rem;
+      margin-left: -.625rem;
+      border-bottom: 0
+  }
+  
+  .card-header-pills {
+      margin-right: -.625rem;
+      margin-left: -.625rem
+  }
+  
+  .card-img-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1.25rem
+  }
+  
+  
+  
+  
+  
+  @media ( min-width :576px) {
+      .card-deck {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+          margin-right: -15px;
+          margin-left: -15px
+      }
+      .card-deck .card {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          margin-right: 15px;
+          margin-bottom: 0;
+          margin-left: 15px
+      }
+  }
+  
+  .card-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column
+  }
+  
+  .card-group>.card {
+      margin-bottom: 15px
+  }
+  
+  @media ( min-width :576px) {
+      .card-group {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap
+      }
+      
+      .card-group>.card {
+          -webkit-box-flex: 1;
+          -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+          margin-bottom: 0
+      }
+      .card-group>.card+.card {
+          margin-left: 0;
+          border-left: 0
+      }
+      .card-group>.card:first-child {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0
+      }
+      
+      .card-group>.card:last-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0
+      }
+    
+      
+      
+  }
+  
+  
+  

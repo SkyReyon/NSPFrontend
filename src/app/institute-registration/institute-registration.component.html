@@ -1,0 +1,150 @@
+<Html>  
+    <body>
+        <section class="login100-form-title" style="background-color: lightgreen">
+            <br>
+            <h1>National Scholarship Portal</h1>
+            <h5>Government Of India</h5>
+        </section>
+        <div class="card" style="background-color:#ffe0cc">
+            <div>
+              
+            </div>
+            </div>
+            <div id="formInst">
+                <h1 id="title" align="center" >Institute Registration Request Form</h1>
+        
+                <form id="formInst">
+                    
+                    <table align="center" border="1" cellpadding="5" cellspacing="0" >
+                                    <tr >
+        
+                                    <tr >
+        
+                                        <td colspan="4" align="left" class="stylemedium">Basic
+                                            Details</td>
+                                    </tr>
+                                    <tr class="stylesmall">
+                                        <td>Institute Name</td>
+                                        <td><input type="text" id="instName" [(ngModel)]="instreg.instName" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter your institute name" required></td>
+                                        <td>Institute Code</td>
+                                        <td><input type="text" id="instCode" [(ngModel)]="instreg.instCode" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter your institution code" required></td>
+                                    </tr>
+    
+                                    <tr class="stylesmall">
+        
+                                        <td>DISE Code</td>
+                                        <td><input type="text" id="diseCode" [(ngModel)]="instreg.diseCode" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter institution DISE Code" required></td>
+                                        <td>Affiliated University/Board Name</td>
+                                        <td><input type="text" id="affName" [(ngModel)]="instreg.affName" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="university/board name" required></td>
+                                    </tr>
+        
+                                    <tr class="stylesmall">
+                                        <td>Affiliated University State</td>
+                                        <td><select id="affState" [(ngModel)]="instreg.affState" [ngModelOptions]="{standalone: true}" required>
+                                                <option value="">-----select-----</option>
+                                                <option value="a1">A1</option>
+                                                <option value="a2">A2</option>
+                                        </select></td>
+                                 </tr>
+        
+                                    <tr class="stylesmall">
+                                        <td>Set Password</td>
+                                        <td><input type="text" [(ngModel)]="instreg.password" [ngModelOptions]="{standalone: true}" id="password"
+                                            maxlength="100" placeholder="Enter password" required></td>
+                                        <td>Confirm Password</td>
+                                        <td><input  type="text" id="cnfPassword"
+                                            maxlength="100" placeholder="retype password" required></td>
+                                    </tr>
+                                    <tr >
+                                        <td colspan="4" align="left" class="stylemedium">Proof Of
+                                            Existence of Institute</td>
+                                    </tr>
+                                    <tr class="stylesmall">
+                                        <td>Institute Establishment/Registration Certificate</td>
+                                        <td>
+                                            <div class="upload-btn-wrapper">
+                                                <input type="file" name="inst_reg" required/>
+                                            </div>
+                                        </td>
+                                        <td>University/Board Affiliation Certificate</td>
+                                        <td>
+        
+                                            <div class="upload-btn-wrapper">
+                                                
+        
+                                                <input type="file" name="inst_aff_cert" required />
+                                            </div>
+                                        </td>
+                                    </tr>
+        
+        
+                                    <tr >
+        
+                                    <tr >
+        
+                                        <td colspan="4" align="left" class="stylemedium">Address</td>
+                                    </tr>
+        
+                                    <tr class="stylesmall">
+                                        <td>Line&nbsp1</td>
+                                        <td><input type="text" id="instAdd1" [(ngModel)]="instreg.instAdd1" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter address line 1"required></td>
+                                        <td>Line&nbsp2</td>
+                                        <td><input type="text" id="instAdd2" [(ngModel)]="instreg.instAdd2" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter address line 2"></td>
+                                    </tr>
+        
+                                    <tr class="stylesmall">
+                                        <td>City</td>
+                                        <td><input type="text" id="instCity" [(ngModel)]="instreg.instCity" [ngModelOptions]="{standalone: true}" maxlength="100"placeholder="Enter your city" required>
+                                        </td>
+        
+                                        <td>State</td>
+                                        <td><select id="instState" [(ngModel)]="instreg.instState" [ngModelOptions]="{standalone: true}" required>
+                                                <option value="">-----select-----</option>
+                                                <option value="jaipur">Jaipur</option>
+                                                <option value="mumbai">Mumbai</option>
+                                        </select></td>
+                                    <tr class="stylesmall">
+        
+                                        <td>District</td>
+                                        <td><select id="instDistrict" [(ngModel)]="instreg.instDistrict" [ngModelOptions]="{standalone: true}" required>
+                                                <option value="">-----select-----</option>
+                                                <option value="d1">D1</option>
+                                                <option value="d2">D2</option>
+                                        </select></td>
+                                        <td>Pin-code</td>
+                                        <td><input type="text" id="instPincode" [(ngModel)]="instreg.instPincode" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter pincode"required>
+                                        </td>
+                                    </tr>
+        
+                                    <tr >
+        
+                                    <tr >
+        
+                                        <td colspan="4" align="left" class="stylemedium">Contact
+                                            Details</td>
+                                    <tr class="stylesmall">
+                                        <td>Principal Name</td>
+                                        <td><input type="text" id="principalName" [(ngModel)]="instreg.principalName" [ngModelOptions]="{standalone: true}" maxlength="100" placeholder="Enter principal"required>
+                                        </td>
+                                        <td>Mobile Number</td>
+                                        <td><input type="text" id="mobileNumber" [(ngModel)]="instreg.mobileNumber" [ngModelOptions]="{standalone: true}" maxlength="100"placeholder="Enter mobile number" required>
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td colspan="4"><input class="cursor" type="checkbox"
+                                            name="confirmation" value="Confirm">All the details and
+                                            documents submitted by us are valid and true. If found of
+                                            submitting invalid documents, we may be held responsible for
+                                            that act by us.</td>
+                                    </tr>
+                                    <tr>
+        
+                                        <td colspan="4"><button type="submit" style="border-radius: 25px; height:40px;width:150px" (click)="registerNow()">Register</button></td>
+        
+                                    </tr>
+                                </table>
+                        </form>
+                </div>
+        </body>
+</Html>

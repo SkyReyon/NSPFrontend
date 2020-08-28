@@ -1,0 +1,111 @@
+<section class="login100-form-title" style="background-color: lightgreen">
+    <br>
+    <h1>National Scholarship Portal</h1>
+    <h5>Government Of India</h5>
+</section>
+<div class="card" style="background-color:#ffe0cc">
+    <div>
+    
+    </div>
+    </div>
+    <div id="formInst">
+        <h1 id="title" align="center" >Student Registration Request Form</h1>
+
+        <form id="formInst">
+            
+            <table align="center" border="1" cellpadding="5" cellspacing="0" >
+                            <tr >
+
+                            <tr >
+                                <tr>
+                                </tr>
+                                <tr>
+                                    <td width="100%" height="100%" align="center"><table
+                                            width="80%" border="1" cellpadding="5" cellspacing="0"
+                                            >
+                                            <tr >
+                                                <td colspan="4" align="center" class="stylemedium">Student
+                                                    Registration Form</td>
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td> Name<br/>(as in marksheet)
+                                                </td>
+                                                <td><input name="first_name" [(ngModel)]="stureg.name" [ngModelOptions]="{standalone: true}" type="text" id="stuname"
+                                                    maxlength="50" placeholder="Enter your full name"required></td>
+                                                <td>Date Of Birth</td>
+                                                <td><input name="dob" [(ngModel)]="stureg.dob" [ngModelOptions]="{standalone: true}" type="date" id="dob" size="10"
+                                                    maxlength="10" required></td>
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td>Gender</td>
+                                                <td>
+                                                <select id="gender" [(ngModel)]="stureg.gender" [ngModelOptions]="{standalone: true}"><option value="">-----select-----</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                </select>
+                                              
+                                                <td>Contact No</td>
+                                                <td><input name="contact_no" [(ngModel)]="stureg.mobileNo" [ngModelOptions]="{standalone: true}" type="text" id="mobileNo"
+                                                    maxlength="20"placeholder="Enter your contact number" required></td>
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td>Institute Code</td>
+                                                <td><input name="inst_code" [(ngModel)]="stureg.instiCode" [ngModelOptions]="{standalone: true}" type="text" id="instcode"
+                                                 placeholder="Enter your institution code"></td>
+                                                <td>Aadhar Number</td>
+                                                <td><input name="aadhar_no" [(ngModel)]="stureg.aadharNo" [ngModelOptions]="{standalone: true}" type="text" id="adharNo"
+                                                    maxlength="12" placeholder="Enter your aadhar number" required></td>
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td>State of Domicile</td>
+                                                <td><select name="domicile_state"  [(ngModel)]="stureg.state" [ngModelOptions]="{standalone: true}" id="domicile_state">
+                                                        <option value="">-----select-----</option>
+                                                        <option value="Mumbai">Mumbai</option>
+                                                        <option value="Jabalpur">Jabalpur</option>
+                                                        <option value="Jaipur">Jaipur</option>
+                                                </select></td>
+                
+                                                <td>District</td>
+                                                <td><select name="district" [(ngModel)]="stureg.district" [ngModelOptions]="{standalone: true}" id="district">
+                                                        <option value="">-----select-----</option>
+                                                        <option value="Mumbai">Mumbai</option>
+                                                        <option value="Jabalpur">Jabalpur</option>
+                                                        <option value="Jaipur">Jaipur</option>
+                                                </select></td>
+                 
+                        
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td>Email ID</td>
+                                                <td><input id="email_ID" [(ngModel)]="stureg.email" [ngModelOptions]="{standalone: true}" maxlength="100"placeholder="Enter your Email Id"></td>
+                                                <td>Bank Name</td>
+                                                <td><input id="bank_name" [(ngModel)]="stureg.bankName" [ngModelOptions]="{standalone: true}"
+                                                    maxlength="100" placeholder="Enter the bank name" required></td>
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td>Bank IFSC Code</td>
+                                                <td><input id="ifsc" [(ngModel)]="stureg.bankIFSC" [ngModelOptions]="{standalone: true}"
+                                                    maxlength="100" placeholder="Enter the IFSC code"></td>
+                                                <td>Bank Account Number</td>
+                                                <td><input id="acno" [(ngModel)]="stureg.accountNo" [ngModelOptions]="{standalone: true}"
+                                                    maxlength="100" placeholder="Enter your account number" required></td>
+                                            </tr>
+                                            <tr class="stylesmall">
+                                                <td>Password</td>
+                                                <td><input type="password" id="st_pass" [(ngModel)]="stureg.password" [ngModelOptions]="{standalone: true}"
+                                                    maxlength="20" placeholder="Enter the password" required></td>
+                                                <td>Retype Password</td>
+                                                <td><input type="password" id="retype"
+                                                    maxlength="20" placeholder="Retype password" required></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><input type="checkbox" id="confirmation"
+                                                    value="Confirm" >All the above information furnished by
+                                                    me is true to the best of my knowledge.</td>
+                                            </tr>
+                
+                                            <tr>
+                                                <td colspan="4">
+                                                <button type="submit" style="margin-left:160px;border-radius: 25px; height:40px;width:150px" (click)="studentregisterNow()"><b>Submit</b></button>
+                                            </tr>
+                        

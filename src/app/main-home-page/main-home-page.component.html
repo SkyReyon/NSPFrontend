@@ -1,0 +1,201 @@
+
+    <img src="assets/images/scholarship.png" alt="IMG" style="width:100%; height:300px;">
+    <div class="navbar">
+      <a routerLink="/main-home-page">Home</a>
+      <a routerLink="/about-us">About Us</a>
+      <a routerLink="/contact-us">Contact Us</a>
+      <a routerLink="/institute-registration"> Institute Registration</a>
+      <a routerLink="/student-registration"> New Registration</a>
+    
+        <!--
+        <div class="dropdown-content">
+          <a routerLink="/student-registration" > Student Registration</a>
+          <a routerLink="/institute-registration"> Institute Registration</a>
+        
+        </div>
+        -->
+    
+     <!--
+    <div class="dropdown">
+        <button class="dropbtn" > Officers Login </button>
+        <div class="dropdown-content">
+          <a routerLink="/nm-login">Ministry Login</a>
+          <a routerLink="/nm-login">Nodal Officer Login</a>
+          
+        </div>
+      </div> -->
+    </div>
+    
+        <div class="card" style="background-color: #ffb380">
+            <div class="card-group">
+                <div class="card" style="max-width: none;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Latest Updates</h4>
+                            <div class="card">
+                                <div class="card-body" style="max-width: auto;">
+                                    <p class="card-text">The Institutes which are registered on NSP 2.0 are required to submit Institute Registration Form for AY 2019-20. The Form is available in Institute Login.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body" style="max-width: none;">
+                            <h4 class="card-title">Helpdesk</h4>
+                            <p class="card-text">In case of Post Matric/Merit cum Means based scholarship schemes: Self Declaration/Self Certification or Self Attested Community Certificate - (Mandatory). In case of Pre-Matric scholarship scheme: Self Declaration of Community Certificate for Class I to X given by the Parent/Legal Guardian- (Mandatory).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card d-inline-block" style="max-width: none;">
+                    <div class="card-body">
+                        <h4 class="card-title">Description about Portal</h4>
+                        <p class="card-text">Scholar Boat Portal is one-stop solution through which various services starting from student application, application receipt, processing, sanction and disbursal	of various scholarships to Students are enabled. 
+    This initiative aims at providing a Simplified, Mission-oriented,	Accountable, Responsive & Transparent 'SMART' System for faster & effective disposal of Scholarships applications and delivery of funds directly into beneficiaries account without any leakages.
+    It ensure timely disbursement of Scholarships to students Provide a common portal for various Scholarships schemes of Central and State Governments Create a transparent database of scholars Avoid duplication in processing Harmonisation of different Scholarships schemes & norms Application of Direct Benefit Transfer.</p>
+                    </div>
+                </div>
+                <div class="card" style="max-width: none; max-height: none;">
+                    <form id="form" (ngSubmit)="studentauthenticate()"><div class="card-body">
+                        <h4 class="card-title">Student Login</h4>
+                        <label>UID :&nbsp;</label><br/>
+                        <input type="text" id="uid" [(ngModel)]="stud.aadharNo" name="aadharNo" required><br/>
+                        <label>Password :&nbsp;</label><br/>
+                        <input type="password" id ="password" [(ngModel)]="stud.password" name="password" required>
+                        <br/><a class="card-link" href="#"  style="color:#ff6600" routerLink="/forget"> Forget Password ?</a><br/>
+                        <div style="list-style:none;">Login As:
+                        <li><a class="card-link" href="#" routerLink="/institute-login" style="color:#ff6600" >Institute</a><br></li>
+                        <li><a class="card-link" href="#" routerLink="/nm-login"  style="color:#ff6600">State Nodal Officer</a><br></li>
+                        <br>
+                        
+                        <button class="btn btn-primary" type="submit"  style="background-color:#ff6600">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+
+
+<!--
+<img src="assets/images/scholarship.png" alt="IMG" style="width:100%; height:300px;">
+<div class="navbar">
+  <a routerLink="/main-home-page">Home</a>
+  <a routerLink="/about-us">About Us</a>
+  <a routerLink="/contact-us">Contact Us</a>
+  <a routerLink="/institute-login"> Institute Login</a>
+  <div class="dropdown">
+    <button class="dropbtn">New Registration  </button>
+    <div class="dropdown-content">
+      <a routerLink="/student-registration" > Student Registration</a>
+      <a routerLink="/institute-registration"> Institute Registration</a>
+      
+    </div>
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn"> Track Application Status </button>
+    <div class="dropdown-content">
+      
+      <a routerLink="/track-institute-application-status">Institute Application Status</a>
+      
+    </div>
+  </div> 
+<div class="dropdown">
+    <button class="dropbtn"> Officers Login    </button>
+    <div class="dropdown-content">
+      <a routerLink="/nm-login">Ministry Login</a>
+      <a routerLink="/nm-login">Nodal Officer Login</a>
+      
+    </div>
+  </div> 
+</div>
+
+
+    <div class="row">
+      <div class="column side">
+      
+        <h2>Latest Update</h2>
+        <p></p>
+    <marquee direction="up"  >
+    
+     <p style = "color:orange">  UGC- URH, PGProf, PGSGC, Ishan Uday- Institution verification have been extended upto 10.07.2020.</p>
+    
+      <p style = "color:lightgreen">   The MUKHYAMANTRI YUVA YOGAYOG YOJANA scheme for the State of Tripura will be opened in the portal from 06-05-2020 to 06-06-2020. Students of Tripura can apply in this scheme for the Academic Year 2019-20.</p> <br>
+    
+     <p style = "color:red">Attention Institutes</p>
+    
+     <p style = "color:blue">The Institutes which are registered on NSP 2.0 are required to submit Institute Registration Form for AY 2019-20. The Form is available in Institute Login.</p> 
+    
+     
+      
+    </marquee>
+    
+    
+    <h2 > HELP DESK</h2>
+     <br>
+        <p>Candidates can contact the Help Desk for resolution of the technical problems on the below mentioned number </p><br>
+
+          0741 - 2869696
+    
+     
+    
+    
+    </div>
+    
+    
+    
+    <div class="column middle">
+      <h2>INTRODUCTION</h2>
+      
+      
+      <p style="font-family:italic;"> National Scholarship Portal (NSP) 2020 is a portal launched by 
+        Ministry of Electronics and Information Technology, Government of India. 
+  This portal provides various scholarships to SC/ ST/ OBC/ Minority students. Applicants can apply/ registration 
+  online for the schemes listed further. 
+  Appliers can read the further session of this page to collect the information like eligibility criteria, 
+  Those applicants who are belonging to the economically backward
+  caste/category such as SC/ ST/ OBC or other minorities’ categories are required
+  to check if they come under the eligibility criteria provided by the Directorate of
+  
+  Technical education, Maharashtra Government.
+</p>
+  <ol type="1" style="color:red;">
+
+    <li>The candidates applying for the Maharashtra Merit cum Means
+      Scholarship 2017-2018 must have completed 10th and 12th from a
+      recognized board with a minimum of 60% marks in aggregate.</li>
+    
+  
+    <li> Maximum two members of a family belonging to the minority category can
+      apply for the scholarship.</li>
+      <li>Students applying for the Maharashtra Merit cum Means Scholarship
+      2020-2021 must have Aadhaar Card enrolled in the State.</li>
+      <li>The applicant must produce all the documents prescribed by the state.
+      registration procedure, the procedure to submit a renewal application, 
+      documents required and other relevant information.</li>
+      
+  
+  </ol>
+
+  </div>
+     
+
+    
+       <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit" routerLink="/student-home-page">Login</button>
+        <label>
+          <br>
+          <input type="checkbox" checked="checked" name="remember"> Remember me 
+        </label>
+      </div>
+    
+      <div class="container" >
+        
+        <a href="#" style="color: blue;" >Forgot password</a>
+      </div>
+    -->

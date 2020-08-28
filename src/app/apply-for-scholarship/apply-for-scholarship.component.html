@@ -1,0 +1,273 @@
+<body>
+  <div class="card" style="background-color:#ffe0cc">
+    <div>
+      <div class="card-body" style="background-color: #ffb380">
+        <h2 class="text-center card-title" style="font-family:cursive ;"><b>Scholar</b> <img src="/images/giphy.gif" style="height:5%;width:9%"></h2>
+        <h6 class="text-center text-muted card-subtitle mb-2">Government
+          of India</h6>
+      </div>
+    </div>
+    </div>
+    <div style="margin : 10px;">
+      <h3 id="title" >Apply For Scholarship</h3>
+      <form id="form1">
+        <table border="1" cellpadding="5" cellspacing="0" bordercolor="#ff6600">
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium">Basic
+                    Details</td>
+                </tr>
+                <tr class="stylesmall">
+  
+                  <td>Religion</td>
+                  <td><select  id="religion" [(ngModel)]="applyforscholarship.religion" [ngModelOptions]="{standalone: true}" required>
+                      <option value="">-----select-----</option>
+                      <option value="Hindu">Hindu</option>
+                      <option value="Muslim">Muslim</option>
+                      <option value="Christian">Christian</option>
+                      <option value="Sikh">Sikh</option>
+                  </select></td>
+                  <td>Community/Category</td>
+                  <td><input name="category" type="text" id="category" [(ngModel)]="applyforscholarship.category" [ngModelOptions]="{standalone: true}"
+                    maxlength="20" placeholder="community"></td>
+                </tr>
+                <tr class="stylesmall">
+                <td>Parents Profession</td>
+                  <td><input name="parents_profession" id="parentsProfession" placeholder="your parents proffesion" [(ngModel)]="applyforscholarship.parentProfession" [ngModelOptions]="{standalone: true}"required>
+                  </td>
+                
+                  <td>Family Annual Income</td>
+                  <td><input name="income" type="number" id="income" placeholder="family annual income" [(ngModel)]="applyforscholarship.income" [ngModelOptions]="{standalone: true}" required></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Father Name</td>
+                  <td><input name="father" type="text" id="father"placeholder="your father's name" [(ngModel)]="applyforscholarship.father" [ngModelOptions]="{standalone: true}" required></td>								
+                  <td>Mother Name</td>
+                  <td><input name="mother" type="text" id="mother" placeholder="your mother's name" [(ngModel)]="applyforscholarship.mother" [ngModelOptions]="{standalone: true}" required></td>
+                    
+                </tr>
+  
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium">Academic
+                    Details</td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Institute Name</td>
+                  <td><input type="text" id="instituteName" [(ngModel)]="applyforscholarship.instituteName" [ngModelOptions]="{standalone: true}" required>
+              
+                </td>
+                  <td>Present Class/Course</td>
+                  <td><input name="present_class" type="text"
+                    id="presentClass" placeholder="" [(ngModel)]="applyforscholarship.presentClass" [ngModelOptions]="{standalone: true}" required></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Present Class/Course Year</td>
+                  <td><input name="present_course_year" type="text" [(ngModel)]="applyforscholarship.presentCourseYear" [ngModelOptions]="{standalone: true}"
+                    id="presentCourseYear" required></td>
+                  <td>Mode Of Study</td>
+                  <td><select name="mode_of_study" type="text" [(ngModel)]="applyforscholarship.modeOfStudy" [ngModelOptions]="{standalone: true}"
+                    id="modeOfStudy" required>
+                      <option value="">-----select-----</option>
+                      <option value="regular">Regular</option>
+                      <option value="distance_course">Distance Course</option>
+                  </select></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Class Start Date</td>
+                  <td><input name="class_start_date" type="text" [(ngModel)]="applyforscholarship.classStartDate" [ngModelOptions]="{standalone: true}"
+                    id="classStartDate" required></td>
+                  <td>University/Board Name</td>
+                  <td><input name="university_board_name" type="text" [(ngModel)]="applyforscholarship.universityBoardName" [ngModelOptions]="{standalone: true}"
+                    id="universityBoardName" maxlength="10" required></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Previous Class/Course</td>
+                  <td><input name="previous_class_course" type="text" [(ngModel)]="applyforscholarship.previousClassCourse" [ngModelOptions]="{standalone: true}"
+                    id="previousClassCourse" required></td>
+                  <td>Previous Passing Year</td>
+                  <td><input name="previous_passing_year" type="text" [(ngModel)]="applyforscholarship.previousPassingYear" [ngModelOptions]="{standalone: true}"
+                    id="previousPassingYear" maxlength="10" required></td>
+                </tr>
+                <tr>
+                  <td class="stylesmall">Previous Class/Course %</td>
+                  <td><input name="previous_course_%" type="number" [(ngModel)]="applyforscholarship.previousCoursePercent" [ngModelOptions]="{standalone: true}"
+                    id="previousCoursePercent" maxlength="80" required></td>
+                </tr>
+  
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium">10th Class</td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Roll Number</td>
+                  <td><input name="10_roll_no" id="tenthRollNo" type="number"  [(ngModel)]="applyforscholarship.tenthRollNo" [ngModelOptions]="{standalone: true}" required></td>
+                  <td>Board Name</td>
+                  <td><input name="10_board_name" id="tenthBoardName" type="text" [(ngModel)]="applyforscholarship.tenthBoardName" [ngModelOptions]="{standalone: true}" required>
+                  </td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Passing Year</td>
+                  <td><input name="10_passing_year" id="tenthPassingYear"type="text" [(ngModel)]="applyforscholarship.tenthPassingYear" [ngModelOptions]="{standalone: true}" required>
+                  </td>
+                  <td>% Obtained</td>
+                  <td><input name="10_%_obtained" id="tenthMarksObtained"type="number" [(ngModel)]="applyforscholarship.tenthMarksObtained" [ngModelOptions]="{standalone: true}" required>
+                  </td>
+                </tr>
+  
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium" required>12th Class</td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Roll Number</td>
+                  <td><input name="12_roll_no" id="twelfthRollNo" type="number" [(ngModel)]="applyforscholarship.twelfthRollNo" [ngModelOptions]="{standalone: true}"required></td>
+                  <td>Board Name</td>
+                  <td><input name="12_board_name" id="twelfthBoardName" type="text" [(ngModel)]="applyforscholarship.twelfthBoardName" [ngModelOptions]="{standalone: true}"required>
+                  </td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Passing Year</td>
+                  <td><input name="12_passing_year" id="twelfthPassingYear" type="text" [(ngModel)]="applyforscholarship.twelfthPassingYear" [ngModelOptions]="{standalone: true}" required>
+                  </td>
+                  <td>% Obtained</td>
+                  <td><input name="12_%_obtained" id="twelfthMarksObtained"type="number" [(ngModel)]="applyforscholarship.twelfthMarksObtained" [ngModelOptions]="{standalone: true}" required>
+                  </td>
+                </tr>
+  
+  
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium">Fee
+                    Details</td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Admission Fee</td>
+                  <td><input name="admission_fee" id="admissionFee" type="number" [(ngModel)]="applyforscholarship.admissionFee" [ngModelOptions]="{standalone: true}" required>
+                  </td>
+                  <td>Tuition Fee</td>
+                  <td><input name="tuition_fee" id="tuitionFee" type="number" [(ngModel)]="applyforscholarship.tuitionFee" [ngModelOptions]="{standalone: true}" required></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Other Fee</td>
+                  <td><input name="other_fee" id="otherFee" type="number" [(ngModel)]="applyforscholarship.otherFee" [ngModelOptions]="{standalone: true}"></td>
+                </tr>
+  
+                
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium">Contact
+                    Details</td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>State</td>
+                  <td><select name="scholer_state" type="text" 
+                    id="scholarState" required>
+                      <option value="">-----select-----</option>
+                      <option value="mp">M.P.</option>
+                      <option value="mumbai">Mumbai</option>
+                  </select></td>
+                  <td>District</td>
+                  <td><select name="scholer_district" type="text"
+                    id="scholarDistrict" required>
+                      <option value="">-----select-----</option>
+                      <option value="jabalpur">Jabalpur</option>
+                      <option value="thane">Thane</option>
+                  </select></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Block</td>
+                  <td><select name="scholer_district" type="text" [(ngModel)]="applyforscholarship.scholarBlock" [ngModelOptions]="{standalone: true}"
+                    id="scholarBlock" required>
+                      <option value="">-----select-----</option>
+                      <option value="b1">B1</option>
+                      <option value="b2">B2</option>
+                  </select></td>
+                  <td>House Number</td>
+                  <td><input name="house_no" id="houseNo" type="number" [(ngModel)]="applyforscholarship.houseNo" [ngModelOptions]="{standalone: true}" required></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Street Number</td>
+                  <td><input name="street_no" id="streetNo" type="number" [(ngModel)]="applyforscholarship.streetNo" [ngModelOptions]="{standalone: true}" required></td>
+                  <td>Pin Code</td>
+                  <td><input name="pin_code" id="pincode" [(ngModel)]="applyforscholarship.pincode" [ngModelOptions]="{standalone: true}" required></td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Choose Scheme Applying For</td>
+                  <td><select name="scheme" type="text" id="scheme" [(ngModel)]="applyforscholarship.scheme" [ngModelOptions]="{standalone: true}" required>
+                      <option value="">-----select-----</option>
+                      <option value="s1">S1</option>
+                      <option value="s2">S2</option>
+                  </select></td>
+                <tr bgcolor="#ff6600">
+                  <td colspan="4" align="left" class="stylemedium">Documents
+                    Upload Section</td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Domicile Certificate</td>
+                  <td>
+                      <input type="file" id="domicileCertificate" required/>
+                    
+                  </td>
+                  <td>Student Photograph</td>
+                  <td><input type="file" id="stuPhoto"required/>
+                  </td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Institute ID Card</td>
+                  <td>
+                      <input type="file" id="instIdCard"required/>
+                  </td>
+                  <td>Caste/Income Certificate</td>
+                  <td>
+                      <input type="file" id="incomeCertificate" required/>
+                  </td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Previous Year Marksheet</td>
+                  <td>
+                    
+                      <input type="file" id="prevMarksheet"required/>
+                    
+                  </td>
+                  <td>Fee Receipt of Current Year</td>
+                  <td>
+                      <input type="file" id="currReciept" required/>
+                    
+                  </td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>Bank Passbook(Front Page)</td>
+                  <td>
+                    
+                      <input type="file" id="bankPassbook" required/>
+                    
+                  </td>
+                  <td>Aadhar Card</td>
+                  <td>
+                    
+                      <input type="file" id="aadharCard" required/>
+                    
+                  </td>
+                </tr>
+                <tr class="stylesmall">
+                  <td>10th Class Marksheet</td>
+                  <td>
+                      <input type="file" id="tenthMarksheet" required/>
+                    
+                  </td>
+                  <td>12th Class Marksheet</td>
+                  <td>
+                      <input type="file" id="twelvethMarksheet" required/>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="4"><input class="cursor" type="checkbox"
+                    id="confirmation" value="Confirm">All the details
+                    furnished by me are true to the best of my knowledge. If any
+                    mistakes are found then I may be disqualified for scholership
+                    scheme announced by government of India Or my state governmnet.
+  
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="4"><input name="register" type="submit"
+                    style="background-color: #ff6600;border-radius: 25px; height:10%; font-weight:bold;"id="register" value="Register" (click)="ApplyNow()"></td>
+                </tr>
+  
+              </table>
+            </form>

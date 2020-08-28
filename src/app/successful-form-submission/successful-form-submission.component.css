@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+  }
+  .block {
+    width: 40% ;
+    margin-left: 400px;
+    border:none;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 14px 28px;
+    text-align: center;
+  }
